@@ -1,0 +1,196 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    background: rgb(2, 59, 231);
+    font-family: 'Golos Text', sans-serif;
+}
+.container{
+
+    background: linear-gradient(0deg,  rgba(3, 43, 57, 0.8) 0%, rgba(37, 76, 249, 0.8)  100%);
+
+    padding:20px 30px;
+}
+
+header{
+ background-image: url(bg.png);
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position-x: center;
+ background-position-y:center;
+}
+
+h1{
+
+    background: url('support-logo-small.png');
+    width: auto;
+    height: 128px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y:center;
+    display: block;
+    font-size: 0;
+    margin: auto;
+    z-index:10;
+}
+
+
+h2{
+    font-family: 'VT323', monospace;
+    font-size: 2.4rem;
+    background-color: #000;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.logo{
+    height:45px;
+    width: auto;
+
+}
+
+#vid {
+    max-width: 442px;
+    width:100%;
+    height: auto;
+    margin-top:0x;
+    border: 6px solid #000;
+    border-radius: 5px;
+}
+.gallery img{
+
+    width: 100%;
+    max-width: 60opx;
+    height: auto;
+
+    border: 6px solid #000;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+
+
+.how div{
+    background-color: #FFF;
+    width: 100%;
+    border-radius:5px;
+    border:6px solid #000;
+    padding: 10px;
+    margin-top: 15px;
+    font-size:1.4rem;
+}
+.blurb{
+    max-width:900px;
+    margin: auto;
+
+    background-color: rgba(255, 255, 255, 0.8) ;
+    padding: 20px;
+
+    border-radius: 5px;
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+.blurb p{
+
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+footer{
+
+    margin-top: 30px;
+}
+
+footer p, footer p a{
+
+    font-size: 0.9rem;
+    color: rgb(168, 216, 245);
+    text-decoration: none;
+
+}
+
+footer p a:hover{
+
+    text-decoration: underline;
+    color: rgb(168, 216, 245);
+
+}
+
+.white-bg{
+
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.white-text, .white-text:hover{
+    color: #FFF;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+    .how div{
+        font-size:1.0rem;
+
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .how div{
+        font-size:1.1rem;
+
+    }
+
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    h1{
+        
+        background: url('support-logo-small.png');
+        width: auto;
+        height: 256px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: center;
+        background-position-y:center;
+        display: block;
+        font-size: 0;
+        margin: auto;
+        z-index:10;
+
+
+
+    }
+    .how div{
+        font-size:1.3rem;
+
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .how div{
+        font-size:1.6rem;
+
+    }
+
+
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .how div{
+        font-size:1.8rem;
+
+    }
+
+ }

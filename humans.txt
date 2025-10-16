@@ -1,0 +1,19 @@
+﻿/* TEAM */
+Creator: Tony Norcross, owner of Digital Fishies
+URL: https://digitalfishies.com
+Description: Freelance ASP.NET Web Developer based in Nottingham
+Contact: hello [at] digitalfishies.com
+Web developer: Tony Norcross
+From: Nottingham
+
+/* THANKS */
+ThreeJs - https://threejs.org
+Phaser - https://phaser.io
+p5.js - https://p5js.org
+Emil Persson - http://www.humus.name
+https://stemkoski.github.io/
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: HTML, CSS, JavaScript
+IDE: VS Code

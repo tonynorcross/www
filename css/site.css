@@ -72,21 +72,6 @@ section {
   margin-bottom: 30px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li {
-  display: inline-block;
-  background-color: #ffffff;
-  padding: 0.6rem;
-  border-radius: 8px;
-  margin: 10px;
-  list-style: none;
-  white-space: nowrap;
-  color: #191919;
-}
-
 .store-logo {
   height: 45px;
 }
@@ -139,24 +124,38 @@ ul li {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 2.6rem;
-  line-height: 118%;
+  font-size: 1rem;
+  line-height: 102%;
 }
 .message h2 {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+.message ul {
+  margin: 0;
+  padding: 0;
+}
+.message ul li {
+  display: inline-block;
+  background-color: #ffffff;
+  list-style: none;
+  white-space: nowrap;
+  color: #191919;
+  padding: 0.2rem 0.3rem;
+  margin: 3px;
+  font-size: 0.6rem;
 }
 .message .quote::before {
   white-space: nowrap;
   content: url("/img/quote-left.svg");
-  width: 40px;
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 5px;
   display: inline-block;
 }
 .message .quote::after {
   white-space: nowrap;
   content: url("/img/quote-right.svg");
-  width: 40px;
-  margin-left: 10px;
+  width: 10px;
+  margin-left: 5px;
   display: inline-block;
 }
 
@@ -197,6 +196,37 @@ ul li {
     opacity: 1;
   }
 }
+.modal-content {
+  background-color: #191919;
+  color: #ffffff;
+  border: 1px solid #707070;
+}
+
+.modal-header {
+  border-bottom-color: #707070;
+}
+
+.modal-footer {
+  border-top-color: #707070;
+}
+
+.bttn,
+.btn-close {
+  border-radius: 0;
+  background-color: #191919;
+  color: #ffffff;
+  border: 1px solid #707070;
+}
+
+.bttn {
+  padding: 6px 15px;
+  font-size: smaller;
+}
+
+.btn-close {
+  background-image: url(/img/close.svg);
+}
+
 /* Extra small devices (phones, 576px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
@@ -207,22 +237,68 @@ ul li {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .nav-logo {
-    height: 60px;
-    width: auto;
+  .message p, .message h2 {
+    padding: 0 1%;
+    font-size: 1.4rem;
+    line-height: 110%;
+  }
+  .message h2 {
+    margin-bottom: 0.18rem;
+  }
+  .message .quote::before {
+    width: 20px;
+    margin-right: 6px;
+  }
+  .message .quote::after {
+    width: 20px;
+    margin-left: 6px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .nav-logo {
-    height: 70px;
-    width: auto;
+  .message p, .message h2 {
+    padding: 0 2%;
+    font-size: 1.6rem;
+    line-height: 112%;
+  }
+  .message h2 {
+    margin-bottom: 0.2rem;
+  }
+  .message ul li {
+    padding: 0.3rem 0.5rem;
+    margin: 5px;
+    font-size: 0.7rem;
+  }
+  .message .quote::before {
+    width: 30px;
+    margin-right: 8px;
+  }
+  .message .quote::after {
+    width: 30px;
+    margin-left: 8px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .nav-logo {
-    height: 80px;
-    width: auto;
+  .message p, .message h2 {
+    padding: 0 2%;
+    font-size: 2.6rem;
+    line-height: 118%;
+  }
+  .message h2 {
+    margin-bottom: 0.3rem;
+  }
+  .message ul li {
+    padding: 0.4rem 0.6rem;
+    margin: 6px;
+    font-size: 0.8rem;
+  }
+  .message .quote::before {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .message .quote::after {
+    width: 40px;
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=site.css.map */

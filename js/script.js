@@ -11,6 +11,10 @@
       let intervalFader = null
       let stopCascading = true;
 
+      const modal = new bootstrap.Modal("#pop")
+      const modalbody = document.getElementById("modal-body")
+      const modaltitle = document.getElementById("modal-title")
+            
       function getRollerItems(){
         return document.querySelectorAll(".auto-play")
       }
@@ -103,19 +107,36 @@
       function initPops(){
         const pops = document.querySelectorAll(".game-holder")
         pops.forEach(function(pop){
-          pop.addEventListener('click', function(){
-            alert("pop")
-            
-            const myModal = new bootstrap.Modal('#modal', {
-              keyboard: false
-            })
+          pop.addEventListener('click', function(event){
+            event.stopPropagation()
+            const activity = event.currentTarget.getAttribute("data-activity")
+            const xhr = new XMLHttpRequest()
+            modaltitle.innerText = activity
+            xhr.onload = function(){
+                if(this.status === 200 ){
+                  modalbody.innerHTML = xhr.responseText
+                  modal.show()
+                }
+                else{
+                  console.warn("can't make the request ", this.status)
+                }
+            }
+            const url = "/activity/" + activity + "/main.htm";
+            xhr.open("get",url)
+            xhr.send()
+
+            // eval("activity" + activity + "()");
+            // console.log(activity)
 
           })
         })
      
       }
 
+      
+
       window.addEventListener('load', function () { 
+        
         initRoller();
         initPops();
       });

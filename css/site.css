@@ -65,8 +65,6 @@ a:hover {
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: darken;
-  padding-block: 38px;
-  margin-bottom: 50px;
   border-bottom: 1px solid #333333;
 }
 
@@ -126,6 +124,7 @@ ul li {
 .business-card .deets {
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 .business-card .deets p {
   text-align: center;
@@ -133,35 +132,37 @@ ul li {
 }
 
 .message {
-  padding: 0 80px;
   text-align: center;
 }
-.message .quote, .message h2 {
-  padding: 0;
+.message p, .message h2 {
+  padding: 0 2%;
   margin: 0;
-  font-size: 3.6rem;
-  line-height: 120%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 118%;
 }
-.message .quote em, .message h2 em {
-  font-weight: 700;
+.message h2 {
+  margin-bottom: 0.3rem;
 }
 .message .quote::before {
   white-space: nowrap;
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M7 7v7H0V6.9c0-4.8 4.5-5.4 4.5-5.4l.6 1.4s-2 .3-2.4 1.9C2.3 6 3.1 7 3.1 7H7zm9 0v7H9V6.9c0-4.8 4.5-5.4 4.5-5.4l.6 1.4s-2 .3-2.4 1.9c-.4 1.2.4 2.2.4 2.2H16z'/%3E%3C/svg%3E");
-  width: 20px;
+  content: url("/img/quote-left.svg");
+  width: 40px;
+  margin-right: 10px;
   display: inline-block;
-  margin-right: 32px;
 }
 .message .quote::after {
   white-space: nowrap;
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M9 9V2h7v7.1c0 4.8-4.5 5.4-4.5 5.4l-.6-1.4s2-.3 2.4-1.9c.4-1.2-.4-2.2-.4-2.2H9zM0 9V2h7v7.1c0 4.8-4.5 5.4-4.5 5.4l-.6-1.4s2-.3 2.4-1.9C4.7 10 3.9 9 3.9 9H0z'/%3E%3C/svg%3E");
-  width: 20px;
-  margin-left: 8px;
+  content: url("/img/quote-right.svg");
+  width: 40px;
+  margin-left: 10px;
   display: inline-block;
 }
 
 .auto-play, .cascade ul li {
   opacity: 0;
+  margin: 6px;
 }
 
 .fade-in-out {

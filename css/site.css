@@ -49,6 +49,12 @@ html, body {
   font-style: normal;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -213,6 +219,10 @@ a:hover {
 
 .blurb {
   margin: 14px 0 0 0;
+}
+
+main {
+  flex: 1;
 }
 
 /* Extra small devices (phones, 576px and down) */

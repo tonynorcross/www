@@ -52,6 +52,7 @@ html, body {
 a {
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
 }
 
 a:hover {
@@ -74,7 +75,7 @@ a:hover {
 }
 
 .logo {
-  height: 50px;
+  height: 80px;
 }
 
 .message {
@@ -218,7 +219,7 @@ a:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
   .logo {
-    height: 80px;
+    height: 100px;
   }
   .message {
     height: 114px;

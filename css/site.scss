@@ -95,6 +95,9 @@ a{
 .message{
    text-align: center;
 
+        height: 100px;
+        padding: 0 2%;
+        display: block;
 
     p, h2{
         padding: 0 2%;
@@ -102,8 +105,8 @@ a{
      
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
-         font-size: 1rem;
-         line-height: 102%;
+         font-size: 1.4rem;
+         line-height: 120%;
     
     }
     h2{
@@ -123,9 +126,9 @@ a{
 
 
 
-                padding: 0.2rem 0.3rem ;
+                padding: 3px ;
                 margin: 3px;
-                font-size: 0.6rem;
+                font-size: 0.8rem;
     
         }
     }
@@ -133,15 +136,15 @@ a{
     .quote::before{
         white-space: nowrap;
         content: url("../img/quote-left.svg");
-        width: 10px;
-        margin-right: 5px;
+        width: 14px;
+        margin-right: 3px;
         display: inline-block;
     }
     .quote::after{
         white-space: nowrap;
         content: url("../img/quote-right.svg");
-        width: 10px;
-        margin-left: 5px;
+        width: 14px;
+        margin-left: 3px;
         display: inline-block;
     }
 

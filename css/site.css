@@ -68,52 +68,13 @@ a:hover {
   border-bottom: 1px solid #333333;
 }
 
-section {
-  margin-bottom: 30px;
-}
-
-.store-logo {
-  height: 45px;
-}
-
-.game-holder {
-  cursor: pointer;
-  position: relative;
-}
-.game-holder h2 {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.6);
-  width: calc(100% - 2px);
-  left: 1px;
-  margin-bottom: 1px;
-}
-
-.navbar * {
-  background-color: #191919;
-}
-
-.nav-logo {
-  height: 40px;
-  width: auto;
-}
-
 .business-card {
-  padding: 30px;
-}
-.business-card img {
-  width: 100%;
-}
-.business-card .deets {
+  padding: 30px 0 0 0;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
-.business-card .deets p {
-  text-align: center;
-  font-size: 1.9rem;
+
+.logo {
+  height: 50px;
 }
 
 .message {
@@ -210,6 +171,17 @@ section {
   border-top-color: #707070;
 }
 
+.footer {
+  border-top: 1px solid #707070;
+}
+.footer .row {
+  padding: 10px 0 0 0;
+  font-size: 0.8rem;
+  color: #707070;
+  text-align: center;
+  margin: 0;
+}
+
 .bttn,
 .btn-close {
   border-radius: 0;
@@ -227,59 +199,131 @@ section {
   background-image: url(/img/close.svg);
 }
 
+.deets {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 0.8rem;
+  color: #707070;
+}
+
+.blurb {
+  margin: 14px 0 0 0;
+}
+
 /* Extra small devices (phones, 576px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
-  .nav-logo {
-    height: 50px;
-    width: auto;
+  .logo {
+    height: 80px;
   }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+  .message {
+    height: 114px;
+    padding: 0 14%;
+  }
   .message p, .message h2 {
-    padding: 0 1%;
+    padding: 0;
     font-size: 1.4rem;
-    line-height: 110%;
+    line-height: 140%;
   }
   .message h2 {
     margin-bottom: 0.18rem;
   }
+  .message ul li {
+    padding: 0.3rem 0.5rem;
+    margin: 4px;
+    font-size: 0.9rem;
+  }
+  .message .quote {
+    padding-top: 8px;
+  }
   .message .quote::before {
     width: 20px;
-    margin-right: 6px;
+    margin-right: 3px;
   }
   .message .quote::after {
     width: 20px;
-    margin-left: 6px;
+    margin-left: 3px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .deets {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 0 4px 0;
+  }
+  .business-card {
+    padding: 30px 0 20px 0;
+    text-align: center;
+  }
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+  .blurb {
+    margin: 24px 0 6px 0;
+  }
+  .message {
+    height: 100%;
+    padding: 0;
+  }
+  .message p, .message h2 {
+    padding: 0 2%;
+    font-size: 1.9rem;
+    line-height: 120%;
+  }
+  .message h2 {
+    margin-bottom: 0.18rem;
+  }
+  .message ul li {
+    padding: 0.3rem 0.5rem;
+    margin: 6px;
+    font-size: 1rem;
+  }
+  .message .quote::before {
+    width: 24px;
+    margin-right: 4px;
+  }
+  .message .quote::after {
+    width: 24px;
+    margin-left: 4px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .blurb {
+    padding: 16px 0 12px 0;
+    font-size: 1.2rem;
+  }
   .message p, .message h2 {
     padding: 0 2%;
-    font-size: 1.6rem;
-    line-height: 112%;
+    font-size: 2.2rem;
+    line-height: 140%;
   }
   .message h2 {
     margin-bottom: 0.2rem;
   }
   .message ul li {
     padding: 0.3rem 0.5rem;
-    margin: 5px;
-    font-size: 0.7rem;
+    margin: 8px 8px;
+    font-size: 1.1rem;
   }
   .message .quote::before {
-    width: 30px;
-    margin-right: 8px;
+    width: 26px;
+    margin-right: 6px;
   }
   .message .quote::after {
-    width: 30px;
-    margin-left: 8px;
+    width: 26px;
+    margin-left: 6px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .blurb {
+    padding: 18px 0 14px 0;
+    font-size: 1.6rem;
+  }
   .message p, .message h2 {
     padding: 0 2%;
     font-size: 2.6rem;
@@ -291,7 +335,7 @@ section {
   .message ul li {
     padding: 0.4rem 0.6rem;
     margin: 6px;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
   .message .quote::before {
     width: 40px;

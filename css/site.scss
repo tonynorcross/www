@@ -104,7 +104,7 @@ a{
 .message{
    text-align: center;
 
-        height: 100px;
+        height: 120px;
         padding: 0 2%;
         display: block;
 
@@ -227,11 +227,9 @@ a{
 .bttn, 
 .btn-close{
     border-radius: 0;
-    
     background-color: #191919;
     color: #ffffff;
     border: 1px solid #707070;
-
 }
 
 .bttn{
@@ -239,11 +237,9 @@ a{
     font-size: smaller;
 }
 
-
 .btn-close{
     background-image: url(/img/close.svg);
 }
-
 
 .deets{
     margin-top: 10px;
@@ -254,14 +250,10 @@ a{
 }
 
 .blurb{
-
     margin: 14px 0 0 0;
-    
-  
 }
-main{
 
-    
+main{
   flex: 1;
 }
 /* Extra small devices (phones, 576px and down) */

@@ -107,14 +107,14 @@ a:hover {
 }
 .message .quote::before {
   white-space: nowrap;
-  content: url("/img/quote-left.svg");
+  content: url("img/quote-left.svg");
   width: 10px;
   margin-right: 5px;
   display: inline-block;
 }
 .message .quote::after {
   white-space: nowrap;
-  content: url("/img/quote-right.svg");
+  content: url("img/quote-right.svg");
   width: 10px;
   margin-left: 5px;
   display: inline-block;

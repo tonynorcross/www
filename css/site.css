@@ -86,7 +86,7 @@ a:hover {
 
 .message {
   text-align: center;
-  height: 100px;
+  height: 120px;
   padding: 0 2%;
   display: block;
 }
@@ -111,7 +111,7 @@ a:hover {
   list-style: none;
   white-space: nowrap;
   color: #191919;
-  padding: 3px;
+  padding: 3px 5px;
   margin: 3px;
   font-size: 0.8rem;
 }
@@ -140,14 +140,14 @@ a:hover {
   animation-name: fader;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-  animation-duration: 4s;
+  animation-duration: 5s;
 }
 
 @keyframes fader {
   0%, 100% {
     opacity: 0;
   }
-  30%, 80% {
+  20%, 80% {
     opacity: 1;
   }
 }
@@ -214,7 +214,7 @@ a:hover {
   margin-bottom: 10px;
   padding: 0;
   font-size: 0.8rem;
-  color: #707070;
+  color: #9a9a9a;
 }
 
 .blurb {
@@ -263,9 +263,8 @@ main {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .deets {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0 0 4px 0;
+    margin-bottom: 14px;
+    font-size: 0.8rem;
   }
   .business-card {
     padding: 30px 0 20px 0;
@@ -310,6 +309,10 @@ main {
     padding: 16px 0 12px 0;
     font-size: 1.2rem;
   }
+  .deets {
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+  }
   .message p, .message h2 {
     padding: 0 2%;
     font-size: 2.2rem;
@@ -337,6 +340,10 @@ main {
   .blurb {
     padding: 18px 0 14px 0;
     font-size: 1.6rem;
+  }
+  .deets {
+    margin-bottom: 18px;
+    font-size: 1rem;
   }
   .message p, .message h2 {
     padding: 0 2%;

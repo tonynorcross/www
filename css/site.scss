@@ -135,7 +135,7 @@ a{
 
 
 
-                padding: 3px ;
+                padding: 3px 5px;
                 margin: 3px;
                 font-size: 0.8rem;
     
@@ -246,7 +246,7 @@ a{
     margin-bottom: 10px;
     padding: 0;
     font-size: 0.8rem;
-    color: #707070;
+    color: #9a9a9a;
 }
 
 .blurb{
@@ -311,9 +311,8 @@ main{
 @media only screen and (min-width: 768px) { 
 
 .deets{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0 0 4px 0;
+    margin-bottom: 14px;
+    font-size: 0.8rem;
 }
 
 .business-card{
@@ -372,6 +371,10 @@ main{
     padding: 16px 0 12px 0;
     font-size: 1.2rem;
 }
+.deets{
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
     .message{
         p, h2{
             padding: 0 2%;
@@ -411,6 +414,10 @@ main{
     font-size: 1.6rem;
 }
 
+.deets{
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
     
 .message{
     p, h2{
@@ -439,6 +446,8 @@ main{
         margin-left: 10px;
     }
 }
+
+
 
 
 }

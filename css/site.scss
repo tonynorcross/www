@@ -79,13 +79,13 @@ a{
 
 .banner{
     background-image: url('../img/bg.jpg');
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.6);
     background-blend-mode: darken;
     
-    border-bottom: 1px solid #333333 ;
+    border-bottom: 1px solid #7a7a7a ;
 }
 
 
@@ -109,13 +109,13 @@ a{
         display: block;
 
     p, h2{
-        padding: 0 2%;
+        padding: 0 17px; 
         margin: 0;
      
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
-         font-size: 1.4rem;
-         line-height: 120%;
+        font-size: 1.4rem;
+        line-height: 120%;
     
     }
     h2{
@@ -125,19 +125,15 @@ a{
     ul{
         margin: 0;
         padding: 0;
-        // width: 100%;
         li{
             display: inline-block;
             background-color: #ffffff;
             list-style: none;
             white-space: nowrap;
             color: #191919;
-
-
-
-                padding: 3px 5px;
-                margin: 3px;
-                font-size: 0.8rem;
+            padding: 3px 5px;
+            margin: 3px;
+            font-size: 0.8rem;
     
         }
     }
@@ -146,14 +142,14 @@ a{
         white-space: nowrap;
         content: url("../img/quote-left.svg");
         width: 14px;
-        margin-right: 3px;
+        margin-left: -17px;
         display: inline-block;
     }
     .quote::after{
         white-space: nowrap;
         content: url("../img/quote-right.svg");
         width: 14px;
-        margin-left: 3px;
+        margin-right: -17px;
         display: inline-block;
     }
 
@@ -246,7 +242,7 @@ a{
     margin-bottom: 10px;
     padding: 0;
     font-size: 0.8rem;
-    color: #9a9a9a;
+    color: #ffffff;
 }
 
 .blurb{
@@ -274,7 +270,7 @@ main{
         height: 114px;
         padding: 0 14%;
         p, h2{
-            padding: 0;
+            padding: 0 23px;
             font-size: 1.4rem;
             line-height: 140%;
         }
@@ -296,11 +292,11 @@ main{
         
         .quote::before{
             width: 20px;
-            margin-right: 3px;
+            margin-left: -23px;
         }
         .quote::after{
             width: 20px;
-            margin-left: 3px;
+            margin-right: -23px;
         }
     }
 
@@ -338,7 +334,7 @@ main{
         padding: 0;
 
         p, h2{
-            padding: 0 2%;
+            padding: 0 28px;
             font-size: 1.9rem;
             line-height: 120%;
         }
@@ -356,11 +352,11 @@ main{
         
         .quote::before{
             width: 24px;
-            margin-right: 4px;
+            margin-left: -28px;
         }
         .quote::after{
             width: 24px;
-            margin-left: 4px;
+            margin-right: -28px;
         }
     }
 }
@@ -377,7 +373,7 @@ main{
 }
     .message{
         p, h2{
-            padding: 0 2%;
+            padding: 0 32px;
             font-size: 2.2rem;
             line-height: 140%;
         }
@@ -395,11 +391,11 @@ main{
         
         .quote::before{
             width: 26px;
-            margin-right: 6px;
+            margin-left: -32px;
         }
         .quote::after{
             width: 26px;
-            margin-left: 6px;
+            margin-right: -32px;
         }
     }
 }
@@ -420,8 +416,9 @@ main{
 }
     
 .message{
+    
     p, h2{
-        padding: 0 2%;
+        padding: 0 50px;
         font-size: 2.6rem;
         line-height: 118%;
     }
@@ -439,11 +436,11 @@ main{
 
     .quote::before{
         width: 40px;
-        margin-right: 10px;
+        margin-left: -50px;
     }
     .quote::after{
         width: 40px;
-        margin-left: 10px;
+        margin-right: -50px;
     }
 }
 

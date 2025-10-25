@@ -67,12 +67,12 @@ a:hover {
 
 .banner {
   background-image: url("../img/bg.jpg");
-  background-position: center center;
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #7a7a7a;
 }
 
 .business-card {
@@ -91,7 +91,7 @@ a:hover {
   display: block;
 }
 .message p, .message h2 {
-  padding: 0 2%;
+  padding: 0 17px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -119,14 +119,14 @@ a:hover {
   white-space: nowrap;
   content: url("../img/quote-left.svg");
   width: 14px;
-  margin-right: 3px;
+  margin-left: -17px;
   display: inline-block;
 }
 .message .quote::after {
   white-space: nowrap;
   content: url("../img/quote-right.svg");
   width: 14px;
-  margin-left: 3px;
+  margin-right: -17px;
   display: inline-block;
 }
 
@@ -214,7 +214,7 @@ a:hover {
   margin-bottom: 10px;
   padding: 0;
   font-size: 0.8rem;
-  color: #9a9a9a;
+  color: #ffffff;
 }
 
 .blurb {
@@ -236,7 +236,7 @@ main {
     padding: 0 14%;
   }
   .message p, .message h2 {
-    padding: 0;
+    padding: 0 23px;
     font-size: 1.4rem;
     line-height: 140%;
   }
@@ -253,11 +253,11 @@ main {
   }
   .message .quote::before {
     width: 20px;
-    margin-right: 3px;
+    margin-left: -23px;
   }
   .message .quote::after {
     width: 20px;
-    margin-left: 3px;
+    margin-right: -23px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -282,7 +282,7 @@ main {
     padding: 0;
   }
   .message p, .message h2 {
-    padding: 0 2%;
+    padding: 0 28px;
     font-size: 1.9rem;
     line-height: 120%;
   }
@@ -296,11 +296,11 @@ main {
   }
   .message .quote::before {
     width: 24px;
-    margin-right: 4px;
+    margin-left: -28px;
   }
   .message .quote::after {
     width: 24px;
-    margin-left: 4px;
+    margin-right: -28px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -314,7 +314,7 @@ main {
     font-size: 0.9rem;
   }
   .message p, .message h2 {
-    padding: 0 2%;
+    padding: 0 32px;
     font-size: 2.2rem;
     line-height: 140%;
   }
@@ -328,11 +328,11 @@ main {
   }
   .message .quote::before {
     width: 26px;
-    margin-right: 6px;
+    margin-left: -32px;
   }
   .message .quote::after {
     width: 26px;
-    margin-left: 6px;
+    margin-right: -32px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -346,7 +346,7 @@ main {
     font-size: 1rem;
   }
   .message p, .message h2 {
-    padding: 0 2%;
+    padding: 0 50px;
     font-size: 2.6rem;
     line-height: 118%;
   }
@@ -360,10 +360,10 @@ main {
   }
   .message .quote::before {
     width: 40px;
-    margin-right: 10px;
+    margin-left: -50px;
   }
   .message .quote::after {
     width: 40px;
-    margin-left: 10px;
+    margin-right: -50px;
   }
 }/*# sourceMappingURL=site.css.map */
